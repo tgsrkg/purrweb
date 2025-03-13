@@ -1,4 +1,39 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
 body {
-    background-color: bisque;
-    font-family: 'Courier New', Courier, monospace;
+    background-color:#181818;
+}    
+
+.header {
+    background-color: #FFAA4C;
+    height: 38px;
+    display: flex;
+}
+
+.for-buisness {
+    font-size: 16px;
+    margin-left: 60px;
+    color: #FFFFFF;
+    background-color: #181818;
+    width: 168px;
+    height: 38px;
+    padding-top:9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 9px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.for-customers {
+    font-size: 16px;
+    width: 168px;
+    height: 38px;
+    padding-top:9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 9px;
+    border-radius: 20px 20px 0px 0px;
 }
