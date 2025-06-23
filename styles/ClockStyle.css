@@ -1,8 +1,136 @@
-body {
-    background-color: azure;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    color:brown;
-    text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: wheat;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../imgs/clock.png") center / cover no-repeat;
+    border-radius: 50%;
+    border: 5px solid ivory;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.3),
+    inset 0 -10px 10px rgba(0, 0, 0, 0.3),
+    0 10px 10px rgba(0, 0, 0, 0.3),
+    inset 0 10px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+        z-index: 111;
+    }
+
+    .hour {
+        position: absolute;
+
+        .hours {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 75px;
+                background-color: black;
+                z-index: 10;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+    }
+
+    .minute {
+        position: absolute;
+
+        .minutes {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 100px;
+                background-color: gray;
+                z-index: 11;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+    }
+
+    .second {
+        position: absolute;
+        .seconds {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 120px;
+                background-color: white;
+                z-index: 12;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+    }
+}
+
+.pauseButton, .startButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: ivory;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pauseButton {
+    margin-left: 5px;
+}
+
+.startButton {
+    margin-right: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
