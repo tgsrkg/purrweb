@@ -16,7 +16,6 @@ function clock() {
         }
     })
 }
-clock()
 
 const startBtn = document.querySelector('.startButton');
 const pauseBtn = document.querySelector('.pauseButton');
@@ -33,3 +32,5 @@ pauseBtn.addEventListener('click', function () {
     pauseBtn.disabled = true;
     startBtn.disabled = false;
 });
+
+clock()
