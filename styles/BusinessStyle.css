@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -11,14 +13,59 @@ body {
 	background-color: #ffaa4c;
 	height: 38px;
 	display: flex;
-    padding-left: 60px;
+	padding-left: 60px;
+}
+
+.for-business {
+	/* For Business */
+
+	width: 88px;
+	height: 20px;
+
+	/* Body/B1_Medium_16 */
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	/* Grayscale/07 */
+	color: #000000;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.for-customers {
+	width: 105px;
+	height: 20px;
+
+	/* Body/B1_Medium_16 */
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	/* Grayscale/00 */
+	color: #000000;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
 }
 
 .for-customers,
 .for-business {
-	font-size: 16px;
-	width: 168px;
-	height: 38px;
 	padding: 9px 40px;
 	border-radius: 20px 20px 0 0;
 }

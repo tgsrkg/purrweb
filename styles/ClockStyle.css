@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../imgs/clock.png") center / cover no-repeat;
+    background: url("../assets/clock/clock.png") center / cover no-repeat;
     border-radius: 50%;
     border: 5px solid ivory;
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.3),
