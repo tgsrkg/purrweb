@@ -17,12 +17,9 @@ body {
 }
 
 .for-business {
-	/* For Business */
-
+	cursor: pointer;
 	width: 88px;
 	height: 20px;
-
-	/* Body/B1_Medium_16 */
 	font-family: "Outfit";
 	font-style: normal;
 	font-weight: 500;
@@ -31,21 +28,16 @@ body {
 	display: flex;
 	align-items: center;
 	text-align: center;
-
-	/* Grayscale/07 */
 	color: #000000;
-
-	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
 }
 
 .for-customers {
+	cursor: pointer;
 	width: 105px;
 	height: 20px;
-
-	/* Body/B1_Medium_16 */
 	font-family: "Outfit";
 	font-style: normal;
 	font-weight: 500;
@@ -54,11 +46,7 @@ body {
 	display: flex;
 	align-items: center;
 	text-align: center;
-
-	/* Grayscale/00 */
 	color: #000000;
-
-	/* Inside auto layout */
 	flex: none;
 	order: 0;
 	flex-grow: 0;
@@ -73,4 +61,27 @@ body {
 .active {
 	color: #ffffff;
 	background-color: #181818;
+}
+
+h2 {
+	color: white;
+}
+
+.content .business-content,
+.content .customers-content {
+	display: none; 
+}
+
+.content .active {
+	display: block;
+}
+
+.customers-text {
+	text-align: center;
+	font-family: "Outfit";
+	font-size: 50px;
+}
+
+.customers-content {
+	padding-top: 150px;
 }

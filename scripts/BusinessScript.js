@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const business = document.querySelector(".for-business");
-  const customers = document.querySelector(".for-customers");
+	const business = document.querySelector(".for-business");
+	const customers = document.querySelector(".for-customers");
+	const businessContent = document.querySelector(".business-content");
+	const customersContent = document.querySelector(".customers-content");
 
-  function setActive(activeElem, inactiveElem) {
-    activeElem.classList.add("active");
-    inactiveElem.classList.remove("active");
-  }
+	function setActive(activeTab, inactiveTab, showContent, hideContent) {
+		activeTab.classList.add("active");
+		inactiveTab.classList.remove("active");
+		showContent.classList.add("active");
+		hideContent.classList.remove("active");
+	}
 
-  setActive(business, customers)
+	setActive(business, customers, businessContent, customersContent);
 
-  business.addEventListener("click", () => {
-    setActive(business, customers);
-  });
+	business.addEventListener("click", () => {
+		setActive(business, customers, businessContent, customersContent);
+	});
 
-  customers.addEventListener("click", () => {
-    setActive(customers, business);
-  });
+	customers.addEventListener("click", () => {
+		setActive(customers, business, customersContent, businessContent);
+	});
 });
