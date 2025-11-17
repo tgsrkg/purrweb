@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	const thanksWrapper = document.querySelector(".thanks-wrapper");
 	const thanksCloseButton = document.querySelector(".thanks-close-button");
 	const superButton = document.querySelector(".super-button");
+	const MOBILE_MENU_VISIBLE_CLASS = "mobile-menu-overlay--visible";
+	const hamburgerMenu = document.querySelector(".hamburger-menu");
+	const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
+	const mobileMenuClose = document.querySelector(".mobile-menu-close");
+	const mobileMenuLinkBusiness = document.querySelector(".mobile-menu-link-business");
+	const mobileMenuLinkCustomers = document.querySelector(".mobile-menu-link-customers");
 
 	function setActive(activeTab, inactiveTab, showContent, hideContent) {
 		activeTab.classList.add("active");
@@ -280,7 +286,66 @@ document.addEventListener("DOMContentLoaded", () => {
 				thanksWrapper.classList.contains(THANKS_VISIBLE_CLASS)
 			) {
 				closeThanks();
+			} else if (mobileMenuOverlay && mobileMenuOverlay.classList.contains(MOBILE_MENU_VISIBLE_CLASS)) {
+				closeMobileMenu();
 			}
 		}
 	});
+
+	// Mobile Menu
+	function openMobileMenu() {
+		if (mobileMenuOverlay) {
+			mobileMenuOverlay.classList.add(MOBILE_MENU_VISIBLE_CLASS);
+			document.body.style.overflow = "hidden";
+			document.body.style.position = "fixed";
+			document.body.style.width = "100%";
+		}
+	}
+
+	function closeMobileMenu() {
+		if (mobileMenuOverlay) {
+			mobileMenuOverlay.classList.remove(MOBILE_MENU_VISIBLE_CLASS);
+			document.body.style.overflow = "";
+			document.body.style.position = "";
+			document.body.style.width = "";
+		}
+	}
+
+	if (hamburgerMenu) {
+		hamburgerMenu.addEventListener("click", (event) => {
+			event.preventDefault();
+			openMobileMenu();
+		});
+	}
+
+	if (mobileMenuClose) {
+		mobileMenuClose.addEventListener("click", (event) => {
+			event.preventDefault();
+			closeMobileMenu();
+		});
+	}
+
+	if (mobileMenuOverlay) {
+		mobileMenuOverlay.addEventListener("click", (event) => {
+			if (event.target === mobileMenuOverlay) {
+				closeMobileMenu();
+			}
+		});
+	}
+
+	if (mobileMenuLinkBusiness) {
+		mobileMenuLinkBusiness.addEventListener("click", (event) => {
+			event.preventDefault();
+			switchToBusiness();
+			closeMobileMenu();
+		});
+	}
+
+	if (mobileMenuLinkCustomers) {
+		mobileMenuLinkCustomers.addEventListener("click", (event) => {
+			event.preventDefault();
+			switchToCustomers();
+			closeMobileMenu();
+		});
+	}
 });
