@@ -23,8 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	const hamburgerMenu = document.querySelector(".hamburger-menu");
 	const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
 	const mobileMenuClose = document.querySelector(".mobile-menu-close");
-	const mobileMenuLinkBusiness = document.querySelector(".mobile-menu-link-business");
-	const mobileMenuLinkCustomers = document.querySelector(".mobile-menu-link-customers");
+	const mobileMenuLinkBusiness = document.querySelector(
+		".mobile-menu-link-business"
+	);
+	const mobileMenuLinkCustomers = document.querySelector(
+		".mobile-menu-link-customers"
+	);
 
 	function setActive(activeTab, inactiveTab, showContent, hideContent) {
 		activeTab.classList.add("active");
@@ -147,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	function updateCtaButtonState() {
 		const allValid = Array.from(requiredInputs).every((input) =>
-			Boolean(input.value.trim().length),
+			Boolean(input.value.trim().length)
 		);
 
 		if (!ctaButton) {
@@ -212,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault();
 			const hasErrors = Array.from(requiredInputs).reduce(
 				(acc, input) => !validateField(input) || acc,
-				false,
+				false
 			);
 
 			if (hasErrors) {
@@ -286,7 +290,10 @@ document.addEventListener("DOMContentLoaded", () => {
 				thanksWrapper.classList.contains(THANKS_VISIBLE_CLASS)
 			) {
 				closeThanks();
-			} else if (mobileMenuOverlay && mobileMenuOverlay.classList.contains(MOBILE_MENU_VISIBLE_CLASS)) {
+			} else if (
+				mobileMenuOverlay &&
+				mobileMenuOverlay.classList.contains(MOBILE_MENU_VISIBLE_CLASS)
+			) {
 				closeMobileMenu();
 			}
 		}
@@ -300,6 +307,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.body.style.position = "fixed";
 			document.body.style.width = "100%";
 		}
+		if (hamburgerMenu) {
+			hamburgerMenu.style.display = "none";
+		}
 	}
 
 	function closeMobileMenu() {
@@ -308,6 +318,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.body.style.overflow = "";
 			document.body.style.position = "";
 			document.body.style.width = "";
+		}
+		if (hamburgerMenu) {
+			hamburgerMenu.style.display = "flex";
 		}
 	}
 
