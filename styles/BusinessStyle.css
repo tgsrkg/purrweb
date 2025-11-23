@@ -537,6 +537,7 @@ header {
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 .why-budss-title {
@@ -794,8 +795,8 @@ header {
 .fifth-page-button {
 	margin-top: 40px;
 	cursor: pointer;
-	max-width: 182px;
-	max-height: 57px;
+	width: 182px;
+	height: 57px;
 	gap: 14px;
 	padding: 16px 30px 16px 30px;
 	border-radius: 16px;
@@ -837,6 +838,7 @@ header {
 }
 
 .facebook-svg {
+	cursor: pointer;
 	width: 90px;
 	height: 90px;
 	position: absolute;
@@ -845,6 +847,7 @@ header {
 }
 
 .twittter-svg {
+	cursor: pointer;
 	width: 90px;
 	height: 90px;
 	position: absolute;
@@ -853,6 +856,7 @@ header {
 }
 
 .instagram-svg {
+	cursor: pointer;
 	width: 90px;
 	height: 90px;
 	position: absolute;
@@ -861,6 +865,7 @@ header {
 }
 
 .tiktok-svg {
+	cursor: pointer;
 	width: 90px;
 	height: 90px;
 	position: absolute;
@@ -937,13 +942,6 @@ footer {
 	width: 281px;
 	height: 25px;
 	justify-content: space-between;
-}
-
-.footer-text {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 100%;
-	letter-spacing: 0px;
 }
 
 .footer-business {
@@ -1133,6 +1131,7 @@ footer {
 }
 
 .cta-wrapper {
+	margin: auto;
 	position: fixed;
 	inset: 0;
 	display: none;
@@ -1149,11 +1148,12 @@ footer {
 }
 
 .cta-block {
+	margin: auto;
 	background-color: #ffffff;
 	width: 417px;
 	border-radius: 20px;
-	position: relative;
 	padding-bottom: 24px;
+	position: fixed;
 }
 
 .cta-stroke {
@@ -1419,12 +1419,6 @@ footer {
 	z-index: 10001;
 }
 
-@media (min-width: 1025px) {
-	.hamburger-menu {
-		display: none !important;
-	}
-}
-
 .hamburger-line {
 	width: 100%;
 	height: 2px;
@@ -1522,7 +1516,13 @@ footer {
 	text-decoration: none;
 	cursor: pointer;
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 1279px) {
+	.content {
+		align-items: center;
+		justify-content: center;
+	}
+
 	header {
 		padding: 0;
 		margin: 0;
@@ -1541,6 +1541,13 @@ footer {
 		width: 124px;
 		height: 39px;
 		margin-left: 16px;
+	}
+
+	.customers-content {
+		min-height: calc(100vh - 200px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.customers-text {
@@ -1590,5 +1597,829 @@ footer {
 		width: 275px;
 		height: 259px;
 		margin-top: 137px;
+	}
+
+	.second-page-content {
+		margin-right: 0;
+		margin-top: 40px;
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+	}
+
+	.about-budss-title {
+		width: 229px;
+		height: auto;
+		font-size: 40px;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.first-row {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+		margin-left: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-text {
+		margin-top: 0;
+		width: 273px;
+		height: 89px;
+		font-size: 24px;
+	}
+
+	.first-highlight {
+		position: absolute;
+		bottom: 15px;
+		right: 0px;
+		transform: rotate(-1.69deg);
+		background-color: #954ced;
+		border-radius: 30px;
+		width: 234px;
+		height: 22px;
+		z-index: 0;
+	}
+
+	.contactless {
+		margin-top: 40px;
+		margin-left: 0px;
+		width: 321px;
+		height: 200px;
+	}
+
+	.contactless-title {
+		font-size: 32px;
+		width: 174px;
+		height: 34px;
+	}
+
+	.contactless-text {
+		font-size: 16px;
+		margin-top: 16px;
+		width: 321px;
+		height: 40px;
+	}
+
+	.increased {
+		width: 301px;
+		height: 214px;
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 60px;
+	}
+
+	.increased-title {
+		font-size: 32px;
+		width: 300px;
+		height: 68px;
+	}
+
+	.increased-text {
+		width: 301px;
+		height: 20px;
+		font-size: 16px;
+		margin-top: 16px;
+	}
+
+	.second-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.analytics {
+		width: 306px;
+		height: 200px;
+		margin-top: 60px;
+		margin-left: 0;
+	}
+
+	.analytics-title {
+		font-size: 32px;
+		width: 287px;
+		height: 34px;
+	}
+
+	.analytics-text {
+		margin-top: 16px;
+		font-size: 16px;
+		width: 306px;
+		height: 40px;
+	}
+
+	.fraud {
+		margin-top: 60px;
+		margin-left: 0;
+		margin-right: 0px;
+		width: 336px;
+		height: 240px;
+	}
+
+	.fraud-title {
+		font-size: 32px;
+		width: 252px;
+		height: 34px;
+	}
+
+	.fraud-text {
+		margin-top: 16px;
+		font-size: 16px;
+		width: 336px;
+		height: 80px;
+	}
+
+	.big-b-svg {
+		display: none;
+	}
+
+	.thrid-page-content {
+		padding-top: 40px;
+		max-height: 540px;
+	}
+
+	.iphone-svg-wrapper {
+		margin-top: 40px;
+		margin-bottom: 39px;
+	}
+
+	.iphone-svg {
+		height: 461px;
+		width: 228px;
+	}
+
+	.budss-animation {
+		font-size: 48px;
+		height: 51px;
+	}
+
+	.first-animation {
+		margin-top: 61px;
+	}
+
+	.second-animation {
+		margin-top: 205px;
+	}
+
+	.third-animtion {
+		margin-top: 349px;
+	}
+
+	.stats-block-content {
+		height: 286px;
+		width: 375px;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 40px;
+		flex-direction: column;
+	}
+
+	.stat-title {
+		font-size: 40px;
+		height: 42px;
+		white-space: nowrap;
+	}
+
+	.stat-text {
+		margin-top: 0;
+		font-size: 20px;
+		white-space: nowrap;
+		margin-left: 20px;
+		height: 25px;
+	}
+
+	.first-stat {
+		margin-left: 25px;
+		margin-right: 0;
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.second-stat {
+		margin-left: 25px;
+		margin-right: 0;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.third-stat {
+		margin-left: 25px;
+		margin-right: 0;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		margin-bottom: 40px;
+	}
+
+	.fourth-page-content {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+		width: 375px;
+		height: 1703px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	.why-budss {
+		margin-top: 40px;
+		width: 351px;
+		height: 120px;
+	}
+
+	.why-budss-title {
+		font-size: 40px;
+	}
+
+	.why-budss-text {
+		font-size: 24px;
+	}
+
+	.second-highlight {
+		position: absolute;
+		bottom: -12px;
+		left: 88px;
+		transform: translateX(-50%) rotate(-1.69deg);
+		background-color: #954ced;
+		border-radius: 20px;
+		width: 244px;
+		height: 22px;
+		z-index: 0;
+	}
+
+	.cards-block {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+		width: 343px;
+		height: auto;
+		justify-content: flex-start;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+
+	.cards-titles {
+		font-size: 32px;
+	}
+
+	.cards-texts {
+		font-size: 16px;
+	}
+
+	.first-cards-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.first-card {
+		width: 343px;
+		height: 362px;
+		justify-content: center;
+		flex-direction: column;
+		border-radius: 20px;
+	}
+
+	.first-card-svg {
+		display: none;
+	}
+
+	.first-card-content {
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.first-card-title {
+		width: 305px;
+		height: 68px;
+	}
+
+	.first-card-text {
+		margin-top: 16px;
+		width: 303px;
+		height: 60px;
+	}
+
+	.first-card-adaptive-svg {
+		margin-top: 5px;
+		width: 343px;
+		height: 193px;
+	}
+
+	.second-card {
+		margin-top: 20px;
+		margin-left: auto;
+		border-radius: 20px;
+		width: 343px;
+		height: 333px;
+	}
+
+	.second-card-content {
+		width: 303px;
+		height: 184px;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.second-card-title {
+		width: 291px;
+		height: 68px;
+	}
+
+	.second-card-text {
+		margin-top: 16px;
+		width: 303px;
+		height: 100px;
+	}
+
+	.second-card-first-svg {
+		margin-left: 10px;
+		margin-top: 269px;
+	}
+
+	.second-card-second-svg {
+		margin-left: 135px;
+		margin-top: 247px;
+	}
+
+	.second-card-third-svg {
+		width: 61px;
+		height: 116px;
+		margin-left: 282px;
+		margin-top: 201px;
+	}
+
+	.second-cards-row {
+		margin-top: auto;
+		flex-direction: column;
+	}
+
+	.third-card {
+		width: 343px;
+		height: 313px;
+		border-radius: 20px;
+	}
+
+	.third-card-content {
+		width: 303px;
+		height: 178px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.third-card-title {
+		width: 303px;
+		height: 102px;
+	}
+
+	.third-card-text {
+		width: 303px;
+		height: 60px;
+		margin-top: 16px;
+	}
+
+	.third-card-svg {
+		margin-left: 141px;
+		margin-top: 230px;
+	}
+
+	.fourth-card {
+		margin-top: 20px;
+		margin-left: auto;
+		border-radius: 20px;
+		width: 343px;
+		height: 395px;
+	}
+
+	.fourh-card-content {
+		width: 303px;
+		height: 184px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.fourth-card-title {
+		width: 303px;
+		height: 68px;
+	}
+
+	.fourth-card-text {
+		width: 279px;
+		height: 100px;
+		margin-top: 16px;
+	}
+
+	.fourht-card-svg {
+		width: 143px;
+		height: 185px;
+		margin-left: 145px;
+		margin-top: 210px;
+	}
+
+	.fifth-page-content {
+		width: 375px;
+		padding-top: 40px;
+	}
+
+	.fifth-page-header {
+		width: 343px;
+		height: 261px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.fifth-page-header-title {
+		width: 303px;
+		height: 84px;
+		font-size: 40px;
+		margin-top: 40px;
+	}
+
+	.fifth-page-button {
+		width: 303px;
+		height: 57px;
+		justify-content: center;
+	}
+
+	.fifth-page-about {
+		margin-top: 40px;
+		width: 375px;
+		height: 349px;
+	}
+
+	.fifth-page-about-description {
+		margin-left: auto;
+		margin-right: auto;
+		width: 355px;
+		height: 200px;
+	}
+
+	.fifth-page-about-title {
+		width: 355px;
+		height: 84px;
+		font-size: 40px;
+	}
+
+	.fifth-page-about-text {
+		width: 340px;
+		height: 96px;
+	}
+
+	.facebook-svg {
+		width: 64px;
+		height: 64px;
+		margin-top: 220px;
+		margin-left: 16px;
+	}
+
+	.twittter-svg {
+		width: 64px;
+		height: 64px;
+		margin-top: 285px;
+		margin-left: 108px;
+	}
+
+	.instagram-svg {
+		width: 64px;
+		height: 64px;
+		margin-top: 220px;
+		margin-left: 200px;
+	}
+
+	.tiktok-svg {
+		width: 64px;
+		height: 64px;
+		margin-top: 285px;
+		margin-left: 292px;
+	}
+
+	.fifth-page-logos {
+		margin-top: 40px;
+		width: 375px;
+		height: 277px;
+		padding-bottom: 40px;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.woo-svg {
+		width: 91px;
+		height: 43px;
+		margin-right: 40px;
+		margin-left: 0px;
+	}
+
+	.shopify-svg {
+		width: 149px;
+		height: 42px;
+	}
+
+	.square-svg {
+		width: 131px;
+		height: 34px;
+		margin-right: 40px;
+	}
+
+	.squarespace-svg {
+		width: 196px;
+		height: 28px;
+	}
+
+	.clover-svg {
+		width: 128px;
+		height: 32px;
+	}
+
+	footer {
+		width: 100%;
+		max-width: 100%;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+	}
+
+	.footer-content {
+		width: 100%;
+		max-width: 343px;
+		height: auto;
+		margin: 40px auto 20px auto;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footer-info {
+		flex-direction: column;
+		height: auto;
+		align-items: flex-start;
+		gap: 24px;
+		width: 100%;
+	}
+
+	.footer-budss-svg {
+		width: 120px;
+		height: 38px;
+		margin-right: auto;
+		margin-bottom: 0;
+		display: block;
+	}
+
+	.footer-two-sections {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		gap: 0;
+		align-items: flex-start;
+		margin-top: 0;
+	}
+
+	.footer-business,
+	.footer-customers {
+		width: auto;
+		height: auto;
+		margin-bottom: 20px;
+		font-size: 20px;
+		line-height: 100%;
+		color: #ffffff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.footer-contacts {
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+		gap: 20px;
+		align-items: flex-start;
+		margin-top: 0;
+	}
+
+	.footer-contact-sales {
+		width: 100%;
+		max-width: 335px;
+		height: 57px;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.footer-download {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		gap: 12px;
+		align-items: flex-start;
+	}
+
+	.appstore-svg,
+	.googleplay-svg {
+		width: 100%;
+		max-width: 194px;
+		height: 57px;
+	}
+
+	.footer-divide-line {
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.footer-privacy {
+		flex-direction: column;
+		gap: 16px;
+		margin-top: 24px;
+		align-items: flex-start;
+	}
+
+	.footer-copyright {
+		width: 100%;
+		height: auto;
+		text-align: left;
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	.footer-policy {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		gap: 12px;
+		align-items: flex-start;
+	}
+
+	.policy-text {
+		width: auto;
+		height: auto;
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	body:has(.cookie-banner--visible)::before {
+		content: "";
+		position: fixed;
+		inset: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+		pointer-events: none;
+	}
+
+	.cookie-banner {
+		width: 335px;
+		height: 402px;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0;
+		bottom: 20px;
+		top: auto;
+		left: 50%;
+		transform: translate(-50%, 150%);
+	}
+
+	.cookie-banner--visible {
+		transform: translate(-50%, 0);
+	}
+
+	.cookie-text {
+		width: 295px;
+		height: 168px;
+		margin-left: 20px;
+		margin-top: 20px;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	.cookie-buttons {
+		width: 295px;
+		height: auto;
+		margin-left: 20px;
+		margin-top: 20px;
+		margin-right: 0;
+		margin-bottom: 0;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 12px;
+	}
+
+	.accept-button {
+		margin-top: 40px;
+		width: 100%;
+		height: 57px;
+	}
+
+	.decline-button {
+		margin-top: 10px;
+		width: 100%;
+		height: 57px;
+	}
+
+	.close-button {
+		top: 20px;
+		right: 20px;
+	}
+
+	.cta-block {
+		width: 335px;
+		height: fit-content;
+	}
+
+	.cta-fields {
+		width: 303px;
+		margin-top: 20px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+
+	.cta-stroke {
+		width: 303px;
+		margin-bottom: 10px;
+	}
+
+	.cta-input {
+		width: 303px;
+		padding-left: 10px;
+	}
+
+	.cta-input-wrapper--phone .cta-input {
+		padding-left: 46px;
+		width: 265px;
+	}
+
+	.cta-input::placeholder {
+		width: 303px;
+		height: 40px;
+	}
+
+	.cta-close-button {
+		margin-left: 293px;
+		margin-top: 6px;
+	}
+
+	.cta-agreement-wrapper {
+		width: 303px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+
+	.cta-button {
+		width: 303px;
+		height: 57px;
+		margin-left: 16px;
+		margin-top: 15px;
+	}
+
+	.thanks-block {
+		width: 335px;
+	}
+
+	.thanks-close-button {
+		margin-left: 300px;
+		margin-top: 19px;
+		margin-right: 15px;
+	}
+
+	.thank-you-svg {
+		width: 229px;
+		height: 179px;
+		margin-left: 53px;
+	}
+
+	.thanks-title {
+		width: 229px;
+		height: 29px;
+		font-size: 24px;
+		margin-top: 20px;
+		margin-left: 53px;
+	}
+
+	.thanks-text {
+		width: 295px;
+		height: 72px;
+		margin-left: 20px;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	.super-button {
+		width: 255px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.hamburger-menu {
+		display: none !important;
+	}
+
+	.first-card-adaptive-svg {
+		display: none;
 	}
 }
