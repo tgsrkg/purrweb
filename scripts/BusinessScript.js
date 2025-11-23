@@ -299,7 +299,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	// Mobile Menu
 	function openMobileMenu() {
 		if (mobileMenuOverlay) {
 			mobileMenuOverlay.classList.add(MOBILE_MENU_VISIBLE_CLASS);
