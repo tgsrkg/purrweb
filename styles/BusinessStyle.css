@@ -2423,3 +2423,177 @@ footer {
 		display: none;
 	}
 }
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+	.influencer-title {
+		font-size: 76px;
+	}
+
+	.hero-svg {
+		width: 495px;
+		height: 429px;
+	}
+
+	.about-text {
+		width: 300px;
+		height: 80px;
+		font-size: 24px;
+	}
+
+	.first-highlight {
+		width: 225px;
+		left: 0;
+		height: 20px;
+		bottom: 7.5px;
+	}
+
+	.big-b-svg {
+		width: 323px;
+		height: 389px;
+	}
+
+	.contactless-title,
+	.increased-title,
+	.analytics-title,
+	.fraud-title {
+		font-size: 36px;
+	}
+
+	.contactless-text,
+	.increased-text,
+	.analytics-text,
+	.fraud-text {
+		font-size: 20px;
+	}
+
+	.first-stat {
+		margin-left: 175px;
+	}
+
+	.first-card-title {
+		width: 320px;
+		height: 120px;
+	}
+
+	.firrst-card-text {
+		width: 300px;
+		height: 60px;
+	}
+
+	.cards-titles {
+		font-size: 36px;
+	}
+
+	.cards-texts {
+		font-size: 16px;
+	}
+
+	.first-card-svg {
+		width: 250px;
+		margin-top: 35px;
+	}
+
+	.second-card-title {
+		width: 350px;
+		height: 100px;
+	}
+
+	.second-card-text {
+		width: 325px;
+	}
+
+	.second-card-third-svg {
+		margin-left: 400px;
+	}
+
+	.second-card-second-svg {
+		margin-left: 380px;
+	}
+
+	.third-card-title {
+		width: 380px;
+		height: 90px;
+	}
+
+	.third-card-svg {
+		margin-left: 280px;
+	}
+
+	.fourth-card-title {
+		width: 350px;
+		height: 90px;
+	}
+
+	.fourht-card-svg {
+		margin-left: 430px;
+	}
+
+	.fifth-page-header {
+		width: 1200px;
+		margin-left: 30px;
+	}
+
+	.fifth-page-about-title {
+		font-size: 76px;
+		width: 700px;
+		height: 160px;
+	}
+
+	.facebook-svg {
+		margin-left: 765px;
+	}
+
+	.twittter-svg {
+		margin-left: 895px;
+	}
+
+	.instagram-svg {
+		margin-left: 1025px;
+	}
+
+	.tiktok-svg {
+		margin-left: 1155px;
+	}
+
+	.woo-svg {
+		margin-left: 40px;
+	}
+
+	.clover-svg {
+		margin-right: 200px;
+	}
+
+	.cookie-banner {
+		width: 1270px;
+	}
+
+	footer {
+		width: 1280px;
+	}
+
+	.cta-fields {
+		margin-top: 20px;
+	}
+
+	.cta-stroke {
+		margin-bottom: 2px;
+	}
+
+	.cta-input {
+		height: 32px;
+		padding-top: 2px;
+	}
+
+	.cta-agreement-text {
+		font-size: 12px;
+	}
+
+	.cta-text {
+		font-size: 12px;
+	}
+
+	.cta-required-message {
+		font-size: 12px;
+		margin-top: 0;
+	}
+}
